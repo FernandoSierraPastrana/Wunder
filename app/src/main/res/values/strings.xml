@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Wunder</string>
+    <string name="loader_splash">splash_loader.json</string>
+    <string name="splash_error_message">Something went wrong</string>
+    <string name="common_ok">OK</string>
+    <string name="title_activity_map">Wunder</string>
 </resources>

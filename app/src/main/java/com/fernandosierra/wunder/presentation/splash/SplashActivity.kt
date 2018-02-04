@@ -1,19 +1,27 @@
 package com.fernandosierra.wunder.presentation.splash
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import com.fernandosierra.wunder.R
-import dagger.android.AndroidInjection
+import com.fernandosierra.wunder.presentation.custom.WActivity
 import javax.inject.Inject
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : WActivity() {
     @Inject
     lateinit var presenter: SplashPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+        presenter.init()
+    }
+
+    override fun onResume() {
+        super.onResume()
         presenter.updateLocations()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        presenter.onPause()
     }
 }

@@ -1,7 +1,7 @@
 package com.fernandosierra.wunder.data.network
 
 import com.fernandosierra.wunder.data.model.Placemarks
-import kotlinx.coroutines.experimental.Deferred
+import io.reactivex.Single
 import retrofit2.http.GET
 
 interface LocationsService {
@@ -10,5 +10,5 @@ interface LocationsService {
     }
 
     @GET(LOCATIONS)
-    fun getPlacemarks(): Deferred<Placemarks>
+    fun getPlacemarks(): Single<Placemarks>
 }
