@@ -5,7 +5,7 @@
     android:id="@+id/frame_main_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.splash.SplashActivity">
+    tools:context=".presentation.features.splash.SplashActivity">
 
     <com.fernandosierra.wunder.presentation.custom.LoaderView
         android:id="@+id/loader_splash"

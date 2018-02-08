@@ -1,27 +1,19 @@
-package com.fernandosierra.wunder.presentation.splash
+package com.fernandosierra.wunder.presentation.features.map
 
 import android.os.Bundle
 import com.fernandosierra.wunder.R
 import com.fernandosierra.wunder.presentation.custom.WActivity
-import javax.inject.Inject
 
-class SplashActivity : WActivity() {
-    @Inject
-    lateinit var presenter: SplashPresenter
+class MapActivity : WActivity<MapPresenter>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.activity_map)
         presenter.init()
     }
 
     override fun onResume() {
         super.onResume()
         presenter.updateLocations()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        presenter.onPause()
     }
 }

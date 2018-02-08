@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".presentation.splash.SplashActivity"
+            android:name="com.fernandosierra.wunder.presentation.features.splash.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Splash">
             <intent-filter>
@@ -40,7 +40,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".presentation.map.MapActivity"
+            android:name="com.fernandosierra.wunder.presentation.features.map.MapActivity"
             android:label="@string/title_activity_map"></activity>
     </application>
 

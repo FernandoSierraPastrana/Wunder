@@ -2,8 +2,8 @@ package com.fernandosierra.wunder.presentation.navigation
 
 import android.app.Activity
 import android.content.Intent
-import com.fernandosierra.wunder.presentation.map.MapActivity
-import com.fernandosierra.wunder.presentation.splash.SplashActivity
+import com.fernandosierra.wunder.presentation.features.map.MapActivity
+import com.fernandosierra.wunder.presentation.features.splash.SplashActivity
 import java.lang.ref.WeakReference
 import javax.inject.Inject
 

@@ -1,8 +1,8 @@
-package com.fernandosierra.wunder.presentation.splash
+package com.fernandosierra.wunder.presentation.features.splash
 
 import com.fernandosierra.wunder.R
 import com.fernandosierra.wunder.domain.interactor.LocationsInteractor
-import com.fernandosierra.wunder.presentation.NetworkingViewState.*
+import com.fernandosierra.wunder.presentation.ViewState.*
 import com.fernandosierra.wunder.presentation.Presenter
 import com.fernandosierra.wunder.presentation.minusAssign
 import com.fernandosierra.wunder.presentation.navigation.Navigator
